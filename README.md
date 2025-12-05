@@ -17,6 +17,16 @@ Model Performance by Game Depth
 | **Pre-game only** (no moves) | 58.31% | 58.28% | 58.12% | 58.12% | 57.32% |
 | **First 10 moves** (20 half-moves) | 58.55% | 58.50% | 58.52% | - | - |
 | **First 20 moves** (40 half-moves) | 60.01% | 60.02% | 59.89% | 59.17% | 57.51% |
-| **First 30 moves** (60 half-moves) | 62.45% | 62.44% | 62.33% | 61.09% | 59.22% |
+| **First 30 moves** (60 half-moves) | 62.69% | 62.79% | 62.55% | 61.15% | 59.29% |
 | **First 35 moves** (70 half-moves) | 63.19% | 63.25% | 63.08% | 61.74% | 59.66% |
 | **First 40 moves** (80 half-moves) | **63.64%** | **63.74%** | **63.55%** | 61.84% | 59.57% |
+
+At 60 half-moves with Stockfish evaluation added as a feature:
+
+| Model | Engine-Free | With Stockfish | Change |
+|-------|-------------|----------------|--------|
+| XGBoost | 62.69% | 62.88% | +0.19% |
+| Neural Network | 62.79% | 62.09% | -0.70% |
+| Random Forest | 62.55% | 62.25% | -0.30% |
+| Logistic Regression | 61.15% | 61.44% | +0.29% |
+| Decision Tree | 59.29% | 54.45% | -4.84% |
