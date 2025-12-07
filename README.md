@@ -33,14 +33,15 @@ This is a chess prediction where a chess game can have three outcome:
 | **All moves** (full game) | 81.71% | **90.58%** | 81.95% | 73.72% | 83.28% |
 
 **At 60 half-moves with Stockfish evaluation added as a feature:**
+> This is using 150k sample and 0.2s movetime
 
-| Model | Engine-Free | With Stockfish | Change |
-|-------|-------------|----------------|--------|
-| XGBoost | 62.69% | 62.88% | +0.19% |
-| Neural Network | 62.79% | 62.09% | -0.70% |
-| Random Forest | 62.55% | 62.25% | -0.30% |
-| Logistic Regression | 61.15% | 61.44% | +0.29% |
-| Decision Tree | 59.29% | 54.45% | -4.84% |
+| Model | No Engine | With Stockfish |
+|-------|-------------|----------------|
+| XGBoost | 62.69% | 62.87% |
+| Neural Network | 62.79% | 62.33% |
+| Random Forest | 62.55% | 62.33% |
+| Logistic Regression | 61.15% | 61.47% |
+| Decision Tree | 59.29% | 55.19% |
 
 ### Why 80 moves ?
 Game length distribution from 3.27M with all being 2300++ ELO games:
